@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="encabezado">
+    <nav class="navbar navbar-light">
+    <div class="text-center col-sm-4 col-md-4 col-lg-4"></div>
+    <a class="navbar-brand" id="Educacion" style="color:black;"><h3>Estudios</h3></a>
+    <div class="collapse navbar-collapse" id="navbarColor02"></div>
+    <button type="button" class="btn btn-dark" routerLink="/nuevaeduc" *ngIf="isLogged">
+        Agregar Estudios
+    </button>
+  
+  </nav>
+</div>
+
+  <br><br><br>
+  <div class="cardsk">
+  <div *ngFor="let Educacion of educ" > 
+
+  <div>
+              
+  <div>
+    <div class="row g-0">
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <img src="{{Educacion.imagenEdu}}" class="img-fluid" alt="imagenedu" width="200">
+      </div>
+      <div class="col">
+        <h5>{{Educacion.tituloEdu}}</h5>
+        <p>{{Educacion.descripcionEdu}}</p>
+        <p>{{Educacion.fechaEdu}}</p>
+      </div>
+      <div class="col-1">
+        <td *ngIf="isLogged">
+            <button routerLink="/editeduc/{{Educacion.id}}">
+                <i class="bi bi-pencil"></i> </button>
+        </td>
+        <td *ngIf="isLogged">
+            <button (click)="delete(Educacion.id)">
+                <i class="bi bi-trash-fill"></i></button>
+        </td>
+        <br>
+
+      </div>
+    </div>
+    <br>
+            <br>
+  </div>
+</div>
+</div>
+</div>
+</div>
+    

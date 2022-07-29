@@ -1,0 +1,63 @@
+
+
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes{
+    margin-right: 0.8em;
+}
+
+#logoAP{
+    width: 150px;
+    }
+
+    img{
+        width: 50px;
+        
+    }
+    
+    .btn{
+        border-width: medium;
+    }
+
+    /*para celulares*/
+    @media (max-width: 575px){
+    .container{
+        flex-direction: column;
+    }
+
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .redes img{
+        margin:0.2em;
+    } 
+    #enlaces li{
+        display: inline;
+        padding-left: 3px;
+        padding-right: 3px;      
+        align-items: center;
+    }
+    a {
+        color: purple;
+        text-decoration: none;
+
+    }
+    
+    .navbar-nav
+    {
+        margin:auto;
+        font-style: italic;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: large;
+        font-weight: bold;
+    }
+
+}

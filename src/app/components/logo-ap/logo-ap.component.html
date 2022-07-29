@@ -1,0 +1,57 @@
+<div class="row">
+  <div class="redes">
+    <div class="container">
+      <div class="logo">
+        <a href="https://argentinaprograma.inti.gob.ar"><img src="../../../assets/APLogo-20-20.png" id="logoAP"></a>
+      
+     
+  </div>
+<div>
+      <a href="https://m.facebook.com/SoleM88"><img src="../../../assets/facebook.png" id="facebook"></a>
+      <a href="https://www.instagram.com/sole.mattos2/"><img src="../../../assets/instagram.png" id="instagram"></a>
+      <a href="https://github.com/Sole1988"><img src="../../../assets/github.png" id="github"></a>
+     
+    </div>
+
+  </div>
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- enlaces -->
+  <div class="collapse navbar-collapse" id="opciones">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#Acercade">Acerca de</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Educacion">Educación</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Experiencia">Experiencia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Proyectos">Proyectos</a>
+      </li>
+    </ul>
+
+    
+
+    <button type="button" class="btn btn-light" (click)="login()" *ngIf="!isLogged">INGRESAR</button>
+    <button type="button" class="btn btn-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+
+    
+  </div>
+
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+      aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  
+

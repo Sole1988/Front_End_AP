@@ -1,0 +1,72 @@
+.row {
+    padding: 0.5px;
+    background-color: rgb(238, 230, 230);
+  
+  }
+  
+  .encabezado{
+    background-color: rgb(218, 197, 238);
+    padding: 25px;
+    border: 5px outset rgb(199, 130, 170);
+    box-shadow: inset 2px -2px 5px 2px rgb(199, 130, 170);
+  }
+  
+
+div{
+    
+    text-align: center;
+}
+
+/*Estilo de la foto de perfil*/
+@media (min-width: 576px){
+    #fotodeperfil{
+        position: absolute;
+        width: 20%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 3%;
+        top:550px;
+    }
+}
+@media (max-width: 575px){
+    #fotodeperfil{
+        position: absolute;
+        width: 35%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 33%;
+        top:950px;
+    }
+}
+
+/*etiqueta nombre*/
+#nombre{
+    font-weight: bold;
+    margin-top: 20%;
+    left: 30px;
+    text-align: left;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+#descripcion{
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    
+}
+
+
+.navbar-brand
+{
+    
+    width:80%;
+    left: 60px;;
+    text-align:center;
+    margin:auto;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}

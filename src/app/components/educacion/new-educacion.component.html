@@ -1,0 +1,44 @@
+
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+
+
+
+                        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                            <div class="form-group">
+                                <label for="tituloEdu">TÍtulo</label>
+                                <input type="text" class="form-control" id="tituloEdu" name="tituloEdu"
+                                    [(ngModel)]="tituloEdu" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fechaEdu">Fecha de inicio/fin</label>
+                                <input type="text" class="form-control" id="fechaEdu" name="fechaEdu"
+                                    [(ngModel)]="fechaEdu" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcionEdu">DescripciÓn</label>
+                                <input type="text" class="form-control" id="descripcionEdu" name="descripcionEdu"
+                                    [(ngModel)]="descripcionEdu" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="InstitutoEdu">Institución</label>
+                                <input type="text" class="form-control" id="InstitutoEdu" name="InstitutoEdu"
+                                    [(ngModel)]="InstitutoEdu" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="imagenEdu">imagen </label><br>
+                                <input ngModel type="text" id="imagenEdu" name="imagenEdu" [(ngModel)]="imagenEdu" required>
+                            </div>
+
+                            <button class="btn btn-primary">
+                                Agregar estudios
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>

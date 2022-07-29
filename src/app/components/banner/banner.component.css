@@ -1,0 +1,6 @@
+img{
+    width: 100%;
+   height: 600px;
+   border: 5px outset rgb(199, 130, 170);
+   box-shadow: inset 2px -2px 5px 2px rgb(172, 35, 160);
+}
