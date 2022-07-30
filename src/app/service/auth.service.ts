@@ -10,7 +10,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 })
 export class AuthService {
 
-authApiServerUrl = 'http://localhost:8080/auth/';
+authApiServerUrl = 'https://apmattos.herokuapp.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 
